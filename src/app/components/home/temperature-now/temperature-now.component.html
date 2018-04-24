@@ -1,0 +1,19 @@
+<div class="container">
+  <div class="dateNow">
+    {{currentDate | date: 'EEEE, MMMM d'}}
+  </div>
+  <div class="weather-items">
+    <ul class="weather-main">
+      <li class="weather-country">{{weatherToday?.name}}, {{weatherToday?.sys.country}}</li>
+      <li class="weather-temp">{{weatherToday?.main.temp}}<sup>o</sup> C</li>
+      <li class="weather-stateofclouds">{{weatherToday?.weather[0].main}}</li>
+    </ul>
+    <ul class="weather-additional">
+      <li><span class="title-addition">Pressure:</span> {{weatherToday?.main.pressure}}</li>
+      <li><span class="title-addition">Humidity:</span>  {{weatherToday?.main.humidity}}</li>
+      <li><span class="title-addition">Wind Speed:</span>  {{weatherToday?.wind.speed}} m/s</li>
+      <li><span class="title-addition">Clounds:</span>  {{weatherToday?.clouds.all}}%</li>
+    </ul>
+  </div>
+
+</div>

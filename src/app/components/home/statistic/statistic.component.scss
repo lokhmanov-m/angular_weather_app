@@ -1,0 +1,63 @@
+@import '../../../styles/styles';
+
+.title-forecast {
+  font-size: 16pt;
+  font-weight: 600;
+  font-family: 'Roboto', sans-serif;
+}
+
+.nav-extended {
+  font-family: 'Roboto', sans-serif;
+  background-color: $nav-backgroundcolor;
+
+
+  .tab {
+    a {
+      color: $text;
+    }
+  }
+}
+
+.statisticWindOpen {
+  width: 100%;
+  height: 5%;
+}
+
+.statisticWindClose {
+  display: none;
+}
+
+.statisticTempOpen{
+  width: 100%;
+  height: 25%;
+}
+
+.statisticTempClose {
+  display: none;
+}
+
+.statisticPressureOpen {
+  width: 100%;
+  height: 25%;
+}
+
+.statisticPressureClose {
+  display: none;
+}
+
+.statisticHumidityOpen {
+  width: 100%;
+  height: 25%;
+}
+
+.statisticHumidityClose {
+  display: none;
+}
+
+.demo-tab-group {
+  border: 1px solid #e8e8e8;
+}
+
+.demo-tab-content {
+  padding: 16px;
+}

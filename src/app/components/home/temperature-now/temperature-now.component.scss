@@ -1,0 +1,67 @@
+@import '../../../styles/styles';
+
+.container {
+  margin-top: 20px;
+  width: 100%;
+  font-family: 'Roboto', sans-serif;
+
+  .dateNow {
+    font-size: 1rem;
+    font-weight: 500;
+  }
+
+  .weather-items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .weather-main {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 5px;
+
+      .weather-country {
+        font-size: 18pt;
+        font-weight: 500;
+      }
+
+      .weather-temp {
+        font-size: 24pt;
+        font-weight: 600;
+      }
+
+      .weather-stateofclouds {
+        font-size: 1rem;
+        font-weight: 500;
+        margin-top: -5px;
+      }
+    }
+
+    .weather-additional {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      margin-top: 5px;
+      width: 100%;
+      background-color: $nav-backgroundcolor;
+
+      li {
+        margin-right: 15px;
+
+        &:last-child {
+          margin-right: 0;
+        }
+
+        .title-addition {
+          font-weight: 700;
+        }
+      }
+    }
+  }
+  .test {
+    width: 200px;
+    height: 200px;
+  }
+}

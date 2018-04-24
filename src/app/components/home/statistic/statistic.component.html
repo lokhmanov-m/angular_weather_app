@@ -1,0 +1,30 @@
+<div class="title-forecast">
+  Forecast 16 days
+</div>
+
+<nav class="nav-extended">
+  <div class="nav-content">
+    <ul class="tabs tabs-transparent">
+      <li class="tab"><a href="#" (click)="showWind()">Wind</a></li>
+      <li class="tab"><a href="#" (click)="showTemp()" class="active">Temperature</a></li>
+      <li class="tab"><a href="#" (click)="showPressure()">Pressure</a></li>
+      <li class="tab"><a href="#" (click)="showHumidity()">Humidity</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div [ngClass]="statisticWind">
+    <canvas id="canvasWind">{{chartWind}}</canvas>
+</div>
+
+<div [ngClass]="statisticTemp">
+  <canvas id="canvasTemp">{{chartTemp}}</canvas>
+</div>
+
+<div [ngClass]="statisticPressure">
+  <canvas id="canvasPressure">{{chartPressure}}</canvas>
+</div>
+
+<div [ngClass]="statisticHumidity">
+  <canvas id="canvasHumidity">{{chartHumidity}}</canvas>
+</div>

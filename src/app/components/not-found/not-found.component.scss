@@ -1,0 +1,45 @@
+@import '../../styles/styles';
+
+nav {
+  padding: 0 20px;
+  background-color: $nav-backgroundcolor;
+
+  .nav-wrapper {
+    display: flex;
+    justify-content: center;
+
+    .logo {
+      display: flex;
+      color: $text;
+
+      .logo-text {
+        color: $text;
+        font-family: 'Roboto', sans-serif;
+        font-size: 18pt;
+        font-weight: 400;
+        margin-left: 10px;
+      }
+    }
+  }
+}
+
+.not-found {
+  margin: 10% auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .title-404{
+    font-size: 32pt;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+  }
+
+  .text-404 {
+    margin: 15px 0;
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+  }
+}

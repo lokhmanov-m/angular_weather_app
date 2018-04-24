@@ -1,0 +1,28 @@
+<nav>
+  <div class="nav-wrapper">
+    <div class="logo">
+      <span class="icon"><i class="small material-icons">brightness_5</i></span>
+      <a href="/home" class="logo-text">Forecast</a>
+    </div>
+
+    <div class="searchCity">
+      <span class="icon"><i class="small material-icons">search</i></span>
+      <input class="search" type="search" name="search" placeholder="City or zipcode"
+             [(ngModel)]="city"
+      >
+      <button class="btn waves-effect waves-light" type="button" name="action"
+              (click)="sendToTemp()"
+      >
+        Go
+        <i class="material-icons right">send</i>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<div class="container">
+  <app-temperature-now [newCity]="cityTemp"></app-temperature-now>
+  <app-statistic [newCity]="cityTemp"></app-statistic>
+</div>
+
+
